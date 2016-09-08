@@ -87,7 +87,7 @@ public class ReadExcelUtils {
         // 得到总行数
         int rowNum = sheet.getLastRowNum();
         row = sheet.getRow(0);
-        int colNum = row.getPhysicalNumberOfCells();
+        int colNum = row.getLastCellNum();
         // 正文内容应该从第二行开始,第一行为表头的标题
         for (int i = 1; i <= rowNum; i++) {
             row = sheet.getRow(i);
